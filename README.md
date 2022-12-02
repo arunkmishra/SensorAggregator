@@ -1,0 +1,2 @@
+# SensorAggregator
+Aggregate sensor data
