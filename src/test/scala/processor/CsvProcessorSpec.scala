@@ -6,9 +6,7 @@ import model.ValidAggregation
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
 
-import java.io.IOException
 import scala.collection.immutable.HashMap
-import scala.concurrent.ExecutionContext
 
 class CsvProcessorSpec extends AnyFlatSpec with should.Matchers {
 
@@ -25,7 +23,7 @@ class CsvProcessorSpec extends AnyFlatSpec with should.Matchers {
     2
   )
 
-  val processor = new SequentialProcessor()
+  val processor = new ProcessorImpl()
   private def fixNewLine(s: String) = s.replaceAll("\\r\\n|\\r|\\n", "\\n")
 
   "Output of default test" should "be as specified in task.md including string representation" in {

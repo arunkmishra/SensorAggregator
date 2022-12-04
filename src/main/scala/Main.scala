@@ -1,11 +1,9 @@
-import processor.SequentialProcessor
+import processor.ProcessorImpl
 
 object Main {
 
   def main(args: Array[String]): Unit = {
-    println(">>> running app")
-    val csvProcessor = new SequentialProcessor()
-    println("process")
+    val csvProcessor = new ProcessorImpl()
     val result = csvProcessor.run(args.headOption.getOrElse("."))
     println(result)
   }

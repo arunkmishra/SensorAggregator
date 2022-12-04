@@ -6,7 +6,7 @@ import model.OutputData
   *
   * Slow, but minimal memory requirements.
   */
-class SequentialProcessor extends CsvProcessor {
+class ProcessorImpl extends CsvProcessor {
   /** Read and aggregate data from a sequence of CSV-files.
     *
     * @param directoryName

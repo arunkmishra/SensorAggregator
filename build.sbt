@@ -5,7 +5,7 @@ ThisBuild / version := "0.1.0-SNAPSHOT"
 ThisBuild / scalaVersion := "2.13.10"
 
 scalafmtOnCompile := true
-/*scalacOptions ++= Seq(
+scalacOptions ++= Seq(
   "-deprecation", // Emit warning and location for usages of deprecated APIs.
   "-encoding",
   "utf-8", // Specify character encoding used by source files.
@@ -45,7 +45,7 @@ scalafmtOnCompile := true
   "-Ywarn-unused:privates", // Warn if a private member is unused.
   "-Ycache-plugin-class-loader:last-modified", // Enables caching of classloaders for compiler plugins
   "-Ycache-macro-class-loader:last-modified" // and macro definitions. This can lead to performance improvements.
-)*/
+)
 
 lazy val root = (project in file("."))
   .settings(
